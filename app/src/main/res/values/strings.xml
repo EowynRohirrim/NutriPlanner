@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NutriPlanner</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- comidas del dia -->
+    <string name="Breakfast">Desayuno</string>
+    <string name="Snack">Almuerzo</string>
+    <string name="Lunch">Comida</string>
+    <string name="Snack2">Merienda</string>
+    <string name="Dinner">Cena</string>
+    <string name="age">Edad</string>
+    <string name="female">Mujer</string>
+    <string name="male">Hombre</string>
+    <string name="dark_mode">Modo oscuro</string>
+    <string name="food">Alimento</string>
+    <string name="add">Añadir</string>
+    <string name="cancel">Cancelar</string>
+    <string name="new_food">Nuevo alimento</string>
+    <string name="Information">Información</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_home"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/nav_shoppingList"
+        android:title="Compra"
+        android:icon="@drawable/ic_shopping_cart"/>
+
+    <item android:id="@+id/nav_pantry"
+        android:title="Despensa"
+        android:icon="@drawable/ic_box"/>
+
+    <item android:id="@+id/nav_planning"
+        android:title="Planificación semanal"
+        android:icon="@drawable/ic_calendar"/>
+
+    <item android:id="@+id/nav_settings"
+        android:title="Configuración"
+        android:icon="@drawable/ic_settings"/>
+
+</menu>

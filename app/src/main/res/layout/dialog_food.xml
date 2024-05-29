@@ -1,0 +1,175 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="270dp"
+    android:layout_height="450dp"
+    android:padding="15dp"
+    android:background="@color/bluelight">
+
+    <!-- Texto "Alimento" -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/new_food"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/dividerTop"
+        android:gravity="center"
+        />
+
+    <!-- Línea de separación -->
+    <View
+        android:id="@+id/dividerTop"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintBottom_toTopOf="@+id/L1"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/L1"
+        app:layout_constraintTop_toBottomOf="@id/dividerTop"
+        app:layout_constraintBottom_toTopOf="@+id/L2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center">
+
+        <!-- Campo para ingresar el nombre del alimento -->
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:hint="Nombre del alimento"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:id="@+id/L2"
+    app:layout_constraintTop_toBottomOf="@id/L1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/L3"
+    android:gravity="center">
+
+    <!-- Desplegable para seleccionar el tipo de alimento -->
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo: "
+        android:textSize="16sp"
+        android:textColor="@android:color/black"/>
+
+    <Spinner
+        android:id="@+id/spinnerFoodType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="5dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/L3"
+        app:layout_constraintTop_toBottomOf="@id/L2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/L4"
+        android:orientation="vertical"
+        >
+
+        <!-- Campo para ingresar la URL de la imagen -->
+        <TextView
+            android:id="@+id/textViewImageUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL de la imagen:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/editTextImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:hint="URL de la imagen"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/L4"
+        app:layout_constraintTop_toBottomOf="@id/L3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/L5"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Desplegable para seleccionar el estado del alimento -->
+        <TextView
+            android:id="@+id/textViewState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir a:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <Spinner
+            android:id="@+id/spinnerFoodState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/L5"
+        app:layout_constraintTop_toBottomOf="@id/L4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonAddFood"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/blueaquamarine"
+            android:text="@string/add"
+            android:textColor="@android:color/white"
+            android:layout_marginHorizontal="5dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/blueaquamarine"
+            android:layout_marginHorizontal="5dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

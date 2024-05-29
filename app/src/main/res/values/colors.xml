@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkblue">#658da6</color>
+    <color name="lightblue">#6da0a6</color>
+    <color name="greenblue">#688c82</color>
+    <color name="cream">#d9c6a3</color>
+    <color name="sand">#d9c8b4</color>
+
+    <color name="bluedark">#524464</color>
+    <color name="bluemediumdark">#595384</color>
+    <color name="bluemediumlight">#4874A6</color>
+    <color name="bluelight">#4D9DCF</color>
+    <color name="blueaquamarine">#40C8C5</color>
+
+    <!--Settings-->
+    <color name="settings_text_title">#FF000000</color>
+
+    <!-- Colors Dark Mode-->
+    <color name="background_dark">#121212</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#CCCCCC</color>
+
+
+</resources>

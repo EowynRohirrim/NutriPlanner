@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NutriPlanner" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+
+
+        <!-- Define los estilos para el modo oscuro -->
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+    </style>
+
+    <style name="NegroABlanco">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="NegroABlancoIconos">
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <!--   *******************     MAIN FRAGMENT     *******************-->
+
+    <style name="MenuBackgroundColor">
+        <item name="android:background">@color/text_secondary_dark</item>
+    </style>
+
+
+    <!--   *******************     HOME FRAGMENT     *******************-->
+
+    <style name="HomeBackgroundColor">
+        <item name="background">@color/black</item>
+    </style>
+
+    <style name="HomeColorLetras">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--   *******************     FOOD ITEM    *******************-->
+
+    <style name="FoodColor">
+        <item name="cardBackgroundColor">@color/blueaquamarine</item>
+    </style>
+    <style name="FoodTitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="FoodSubtitle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--   *******************     SETTINGS FRAGMENT     *******************-->
+    <style name="SettingsTittles">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SettingsText">
+        <item name="android:textColor">@color/text_secondary_dark</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+</resources>
+
