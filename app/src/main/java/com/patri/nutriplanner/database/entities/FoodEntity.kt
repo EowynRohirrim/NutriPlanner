@@ -10,7 +10,7 @@ import com.patri.nutriplanner.Food
 
 // Define un enum para los diferentes tipos de comida
 enum class FoodType(val typeName: String) {
-    NULL("sin tipo de alimento"),
+    NULL("Sin tipo de alimento"),
     LACTEOS("Lácteos y derivados"),
     CARNE("Carne"),
     PESCADO("Pescado"),
@@ -29,6 +29,7 @@ enum class FoodState(val stateName: String, val stateDescription: String) {
     SHOPPING("Shopping", "Lista de la compra"),
     PANTRY("Pantry", "Despensa")
 }
+
 
 /**                             Tabla del Recycler View                  **/
 @Entity(tableName="food_table2")

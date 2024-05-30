@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="32dp"
-        android:src="@drawable/ic_refresh"
+        android:src="@drawable/ic_delete"
         android:contentDescription="Reiniciar plan semanal"
         app:backgroundTint="@color/blueaquamarine"
         app:tint="@color/white"

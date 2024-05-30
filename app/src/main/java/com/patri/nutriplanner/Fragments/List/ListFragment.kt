@@ -137,11 +137,12 @@ class ListFragment : Fragment(R.layout.fragment_list) {
         //Modificar alimento
         if (foodEntity != null) {
             // Si el alimento no es null, configurar los valores actuales en el diálogo
+            dialogBinding.textViewTitle.setText("Modificar alimento")
             dialogBinding.editTextName.setText(foodEntity.name)
             dialogBinding.spinnerFoodType.setSelection(FoodType.values().indexOf(foodEntity.type))
             dialogBinding.editTextImageUrl.setText(foodEntity.image)
             dialogBinding.spinnerFoodState.setSelection(FoodState.values().indexOf(foodEntity.state))
-            dialogBinding.buttonAddFood.setText("Actualizar alimento")
+            dialogBinding.buttonAddFood.setText("Actualizar")
         }
 
         // Añadir un TextWatcher al campo de texto del nombre del alimento
